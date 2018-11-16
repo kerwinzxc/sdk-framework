@@ -16,7 +16,7 @@
 5. 考虑适应海外市场多种语言，支持语言包切换打包
 
 
-## firstmeet-andsdk-ups-framwork       
+## firstmeet-andsdk-ups-framework       
 ### 介绍
     CJSDK 初见用户支付系统（User Payment System）SDK框架, 一套框架适用于国内、海外游戏接入
 	
@@ -58,7 +58,7 @@
 # 初见移动跟踪分析MTA SDK （Mobile Tracking Analytics）
 [参考：从U8SDK的设计之初，我们就已经考虑到了，其实作为一款统一的SDK接入框架，我们要接入的不仅仅是渠道SDK，还有很多和游戏功能相关的一些其他SDK，比如统计类SDK，广告SDK，分享SDK，推送SDK，调试SDK等。所以，基于U8SDK去接入这些功能性SDK是轻而易举的事情。下面我们就来以接入腾讯Bugly调试插件为例子，看看在U8SDK怎么接入功能性SDK。通过腾讯Bugly我们可以收集游戏的崩溃日志，以及其他一些游戏的性能监控等。和之前接入渠道SDK一样，我们也新建一个工程：U8SDK_Plugin_Bugly，将其IsLibrary选中。接入的过程也和渠道SDK一样，我们需要一个config.xml和一个SDKManifest.xml 。](http://c80.com.cn/archives/233)
 
-## firstmeet-andsdk-mta-framwork       
+## firstmeet-andsdk-mta-framework       
     MtaFramework 初见MTA SDK框架
 	
 	MTA统一框架接口，封装第三方事件、日志上报SDK,提供统一接口
