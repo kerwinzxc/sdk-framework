@@ -1,41 +1,63 @@
-# 初见用户支付SDK
+# 初见用户支付系统 CJSDK
+
+![初见用户支付系统SDK](document/sdk-arch.png "First Meet Games User-Payment System SDK")
+
+## 设计思想
+总体的设计思想是：参见[U8SDK——SDK接入抽象层的设计](http://c80.com.cn/archives/121)
+
+1. 游戏各个渠道有一个主渠道SDK，比如UC，当乐，91等SDK。这个各个渠道只能同时有一个。不可能同时为UC也是91SDK
+
+2. 非渠道的功能性SDK，包括广告，分享，统计，推送等。这些东西，我们作为插件集成到这套抽象框架来。
+
+3. 所有SDK的实现可以很方便，而且结构比较统一
+
+4. 所有的渠道SDK也好，还是功能性SDK也好，SDK抽象层都抽象出对应的接口。方便游戏层的调用，也方便具体插件的实现。
+
+5. 考虑适应海外市场多种语言，支持语言包切换打包
+
 
 ## firstmeet-andsdk-ups-framwork       
-    F8Framework 初见用户支付SDK框架
+### 介绍
+    CJSDK 初见用户支付系统（User Payment System）SDK框架, 一套框架适用于国内、海外游戏接入
 	
 	渠道统一框架接口，所有渠道必须实现本框架接口，统一游戏app接入方式
+
+  > 唯一入口类： CJSDK    
 	
 
-## 功能清单
+### 功能清单
 - 用户登录、帐号注册、快速注册、忘记密码、修改密码、修改个人信息（如绑定电邮地址）等用户账号相关功能
 - facebook、google、wechat、twitter等第三方登录
 - 上报各种事件日志
 
-## 依赖
-依赖使用firstmeet-andsdk-mta-framework上报埋点数据
+### 依赖
+  > 依赖使用firstmeet-andsdk-mta-framework上报埋点数据
 
 ## UPS SDK实现渠道清单
 编号|工程名称|说明
 ---|:---|---
-1| firstmeet-andsdk-ups-chujian |       初见渠道用户支付SDK实现 F8Framework
-2| firstmeet-andsdk-ups-huawei  |       huawei渠道用户支付SDK实现 F8Framework
-3| firstmeet-andsdk-ups-vivo |          Vivo渠道用户支付SDK实现 F8Framework
-4| firstmeet-andsdk-ups-oppo |          Oppo渠道用户支付SDK实现 F8Framework
-5| firstmeet-andsdk-ups-uc   |          uc渠道用户支付SDK实现 F8Framework
-6| firstmeet-andsdk-ups-xiaomi |        xiaomi渠道用户支付SDK实现 F8Framework
-7| firstmeet-andsdk-ups-baidu  |        baidu渠道用户支付SDK实现 F8Framework
-8| firstmeet-andsdk-ups-google  |       google渠道用户支付SDK实现 F8Framework
+1| firstmeet-andsdk-ups-chujian |       初见渠道用户支付系统SDK实现 CJSDK框架
+2| firstmeet-andsdk-ups-huawei  |       huawei渠道用户支付系统SDK实现 CJSDK框架
+3| firstmeet-andsdk-ups-vivo |          Vivo渠道用户支付系统SDK实现 CJSDK框架
+4| firstmeet-andsdk-ups-oppo |          Oppo渠道用户支付系统SDK实现 CJSDK框架
+5| firstmeet-andsdk-ups-uc   |          uc渠道用户支付系统SDK实现 CJSDK框架
+6| firstmeet-andsdk-ups-xiaomi |        xiaomi渠道用户支付系统SDK实现 CJSDK框架
+7| firstmeet-andsdk-ups-baidu  |        baidu渠道用户支付系统SDK实现 CJSDK框架
+8| firstmeet-andsdk-ups-google  |       google渠道用户支付系统SDK实现 CJSDK框架
 
 ## UPS SDK语言包清单
 编号|工程名称|说明
 ---|:---|---
-1| firstmeet-andsdk-ups-langpack-Thai |       用户支付SDK泰文语言包
-2| firstmeet-andsdk-ups-langpack-Japanese  |  用户支付SDK日文语言包
-3| firstmeet-andsdk-ups-langpack-Vietnamese  |  用户支付SDK越南文语言包
-4| firstmeet-andsdk-ups-langpack-English  |  用户支付SDK英文语言包
+0| firstmeet-andsdk-ups-langpack-Chinese |    用户支付系统SDK中文语言包，默认
+1| firstmeet-andsdk-ups-langpack-Thai |       用户支付系统SDK泰文语言包
+2| firstmeet-andsdk-ups-langpack-Japanese  |  用户支付系统SDK日文语言包
+3| firstmeet-andsdk-ups-langpack-Vietnamese  |  用户支付系统SDK越南文语言包
+4| firstmeet-andsdk-ups-langpack-English  |  用户支付系统SDK英文语言包
 
 
-# 初见MTA SDK
+# 初见移动跟踪分析MTA SDK （Mobile Tracking Analytics）
+[参考：从U8SDK的设计之初，我们就已经考虑到了，其实作为一款统一的SDK接入框架，我们要接入的不仅仅是渠道SDK，还有很多和游戏功能相关的一些其他SDK，比如统计类SDK，广告SDK，分享SDK，推送SDK，调试SDK等。所以，基于U8SDK去接入这些功能性SDK是轻而易举的事情。下面我们就来以接入腾讯Bugly调试插件为例子，看看在U8SDK怎么接入功能性SDK。通过腾讯Bugly我们可以收集游戏的崩溃日志，以及其他一些游戏的性能监控等。和之前接入渠道SDK一样，我们也新建一个工程：U8SDK_Plugin_Bugly，将其IsLibrary选中。接入的过程也和渠道SDK一样，我们需要一个config.xml和一个SDKManifest.xml 。](http://c80.com.cn/archives/233)
+
 ## firstmeet-andsdk-mta-framwork       
     MtaFramework 初见MTA SDK框架
 	
@@ -52,12 +74,8 @@
 3| firstmeet-andsdk-mta-qq  |           腾讯移动分析SDK实现封装 MtaFramework
 
 
-
 ## 参考资料
 - [iOS 游戏渠道SDK 抽象工程封装](https://blog.csdn.net/SeanHuang1661/article/details/50131469)
 - [U8SDK IOS游戏接入指南](http://www.6xsdk.com/u8-wiki/#!ios_game_doc.md)
 - [Spotify iOS SDK ](https://github.com/spotify/ios-sdk)
 - [TypeSdk手游聚合SDK](http://www.typesdk.com/)
-
-
-
