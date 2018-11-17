@@ -48,11 +48,12 @@
 ## UPS SDK语言包清单
 编号|工程名称|说明
 ---|:---|---
-0| firstmeet-andsdk-ups-langpack-Chinese |    用户支付系统SDK中文语言包，默认
-1| firstmeet-andsdk-ups-langpack-Thai |       用户支付系统SDK泰文语言包
-2| firstmeet-andsdk-ups-langpack-Japanese  |  用户支付系统SDK日文语言包
-3| firstmeet-andsdk-ups-langpack-Vietnamese  |  用户支付系统SDK越南文语言包
-4| firstmeet-andsdk-ups-langpack-English  |  用户支付系统SDK英文语言包
+0| firstmeet-andsdk-ups-langpack-zh_CN |    用户支付系统SDK简体中文语言包，默认
+1| firstmeet-andsdk-ups-langpack-zh_TW |    用户支付系统SDK繁体中文语言包
+2| firstmeet-andsdk-ups-langpack-th_TH |    用户支付系统SDK泰文语言包
+3| firstmeet-andsdk-ups-langpack-ja_JP  |   用户支付系统SDK日文语言包
+4| firstmeet-andsdk-ups-langpack-ko_KR  |   用户支付系统SDK韩文语言包
+5| firstmeet-andsdk-ups-langpack-en_US  |   用户支付系统SDK英文语言包
 
 
 # 初见移动跟踪分析MTA SDK （Mobile Tracking Analytics）
