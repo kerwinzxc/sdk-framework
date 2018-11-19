@@ -80,3 +80,4 @@
 - [U8SDK IOS游戏接入指南](http://www.6xsdk.com/u8-wiki/#!ios_game_doc.md)
 - [Spotify iOS SDK ](https://github.com/spotify/ios-sdk)
 - [TypeSdk手游聚合SDK](http://www.typesdk.com/)
+- [Android Architecture Components 只看这一篇就够了](https://juejin.im/post/5b30e39bf265da599423510a)
