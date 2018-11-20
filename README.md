@@ -13,7 +13,7 @@
 
 4. 所有的渠道SDK也好，还是功能性SDK也好，SDK抽象层都抽象出对应的接口。方便游戏层的调用，也方便具体插件的实现。
 
-5. 考虑适应海外市场多种语言，支持语言包切换打包
+5. 考虑适应海外市场多种等资源，支持等资源包切换打包
 
 
 ## firstmeet-andsdk-ups-framework       
@@ -45,15 +45,15 @@
 7| firstmeet-andsdk-ups-baidu  |        baidu渠道用户支付系统SDK实现 CJSDK框架
 8| firstmeet-andsdk-ups-google  |       google渠道用户支付系统SDK实现 CJSDK框架
 
-## UPS SDK语言包清单
+## UPS SDK资源包清单
 编号|工程名称|说明
 ---|:---|---
-0| firstmeet-andsdk-ups-langpack-zh_CN |    用户支付系统SDK简体中文语言包，默认
-1| firstmeet-andsdk-ups-langpack-zh_TW |    用户支付系统SDK繁体中文语言包
-2| firstmeet-andsdk-ups-langpack-th_TH |    用户支付系统SDK泰文语言包
-3| firstmeet-andsdk-ups-langpack-ja_JP  |   用户支付系统SDK日文语言包
-4| firstmeet-andsdk-ups-langpack-ko_KR  |   用户支付系统SDK韩文语言包
-5| firstmeet-andsdk-ups-langpack-en_US  |   用户支付系统SDK英文语言包
+0| firstmeet-andsdk-ups-langpack-zh_CN |    用户支付系统SDK图片、简体中文等资源包，默认
+1| firstmeet-andsdk-ups-langpack-zh_TW |    用户支付系统SDK图片、繁体中文等资源包
+2| firstmeet-andsdk-ups-langpack-th_TH |    用户支付系统SDK图片、泰文等资源包
+3| firstmeet-andsdk-ups-langpack-ja_JP  |   用户支付系统SDK图片、日文等资源包
+4| firstmeet-andsdk-ups-langpack-ko_KR  |   用户支付系统SDK图片、韩文等资源包
+5| firstmeet-andsdk-ups-langpack-en_US  |   用户支付系统SDK图片、英文等资源包
 
 
 # 初见移动跟踪分析MTA SDK （Mobile Tracking Analytics）
