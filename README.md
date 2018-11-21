@@ -48,12 +48,12 @@
 ## UPS SDK资源包清单
 编号|工程名称|说明
 ---|:---|---
-0| firstmeet-andsdk-ups-langpack-zh_CN |    用户支付系统SDK图片、简体中文等资源包，默认
-1| firstmeet-andsdk-ups-langpack-zh_TW |    用户支付系统SDK图片、繁体中文等资源包
-2| firstmeet-andsdk-ups-langpack-th_TH |    用户支付系统SDK图片、泰文等资源包
-3| firstmeet-andsdk-ups-langpack-ja_JP  |   用户支付系统SDK图片、日文等资源包
-4| firstmeet-andsdk-ups-langpack-ko_KR  |   用户支付系统SDK图片、韩文等资源包
-5| firstmeet-andsdk-ups-langpack-en_US  |   用户支付系统SDK图片、英文等资源包
+0| firstmeet-andsdk-ups-respack-zh_CN |    用户支付系统SDK图片、简体中文等资源包，默认
+1| firstmeet-andsdk-ups-respack-zh_TW |    用户支付系统SDK图片、繁体中文等资源包
+2| firstmeet-andsdk-ups-respack-th_TH |    用户支付系统SDK图片、泰文等资源包
+3| firstmeet-andsdk-ups-respack-ja_JP  |   用户支付系统SDK图片、日文等资源包
+4| firstmeet-andsdk-ups-respack-ko_KR  |   用户支付系统SDK图片、韩文等资源包
+5| firstmeet-andsdk-ups-respack-en_US  |   用户支付系统SDK图片、英文等资源包
 
 
 # 初见移动跟踪分析MTA SDK （Mobile Tracking Analytics）
@@ -81,3 +81,4 @@
 - [Spotify iOS SDK ](https://github.com/spotify/ios-sdk)
 - [TypeSdk手游聚合SDK](http://www.typesdk.com/)
 - [Android Architecture Components 只看这一篇就够了](https://juejin.im/post/5b30e39bf265da599423510a)
+- [滴滴国际化项目 Android 端演进](http://www.trinea.cn/android/didi-internationalization-android-evolution/)
