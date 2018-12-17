@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chujian.firstmeet_andsdk_ups_00framework">
+
+
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 谷歌支付 -->
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <!-- 读取存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 写入存储 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <!--腾讯BUGLY START-->
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!--腾讯BUGLY END-->
+
+
+
+    <application
+android:name="com.chujian.framework.app.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+
+        <meta-data
+            android:name="CHUJIAN_CHANNEL"
+            android:value="Google" />
+
+
+        <!--GoogleRSA-->
+
+        <meta-data
+            android:name="com.chujian.google.android.pay.gpa.BASE64RSAPUBLICKEY"
+            android:value="@string/google_ply_base64_rsa" />
+
+
+        <!--MTA统计渠道-->
+        <meta-data
+            android:name="com.chujian.mtas"
+            android:value="com.chujian.mta.channel.AppsFlyer" />
+
+
+        <!--AppsFlyer KEY-->
+        <meta-data
+            android:name="com.chujian.mta.appsflyerkey"
+            android:value="aTAb5CzF6EutcXepZPhQzJ" />
+
+
+        <activity android:name="com.chujian.framework.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

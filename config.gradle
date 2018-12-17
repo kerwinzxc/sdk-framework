@@ -1,0 +1,40 @@
+/**
+ *  全局统一配置文件
+ */
+ext {
+
+    //版本号
+    versions = [
+            //应用ID
+            applicationId           : "com.firstmeetgame.agmthai.gp",
+            //版本号
+            versionCode             : 1,
+            //版本名称
+            versionName             : "1.0.0",
+            // 目标版本
+            compileSdkVersion       : 28,
+            // 构建版本
+            buildToolsVersion       : "28.0.3",
+            // 最低兼容版本
+            minSdkVersion           : 15,
+            // 目标版本
+            targetSdkVersion        : 26,
+            //
+            androidSupportSdkVersion: "28.0.0",
+
+            multidex                : "1.0.2",
+            sdk_thailand            : "1.0.2",
+            mta_framework           : "1.0.0-TEST",
+            mta_chujian             : "1.0.0-TEST",
+            mta_appsflyer           : "1.0.0-TEST",
+
+
+    ]
+    dependencies = [
+            "multidex"    : "com.android.support:multidex:${versions["multidex"]}",
+            "sdk-thailand": "com.chujian:sdk-thailand:${versions["sdk_thailand"]}",
+            "mta-framework": "com.chujian:mta-framework:${versions["mta_framework"]}",
+            "mta-chujian"  : "com.chujian:mta-chujian:${versions["mta_chujian"]}",
+            "mta-appsflyer": "com.chujian:mta-appsflyer:${versions["mta_appsflyer"]}",
+    ]
+}

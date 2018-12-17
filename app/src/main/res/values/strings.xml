@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">firstmeet-andsdk-ups-00framework</string>
+
+    <!--Facebook-->
+    <string name="facebook_app_id">397359414136334</string>
+    <string name="fb_login_protocol_scheme">fb397359414136334</string>
+    <!--Google 支付-->
+    <string name="google_ply_base64_rsa">Oj4+NT4dNjk1EBwGHxweME4ARzVBUUVGNjY4NDYmTzY6Pj41NBA8NDYmMjZrN1lRMAEOAQYhJR48GwJcFUcbPRkTAB1NR002MhpPJho4XCUVAj5EJRMDFkUTDzE1d0VKMjIVQRZFMRhYIhMgLxYTDhsuJwNXVC91MDo6RzIiJQAOIBM2NjwuWEMFHxlCbFBBQwU7WDE0WC5OR048EDYUJBYvNDx5YzRwHUYeG1whFEYcTzUhMztcISA6WDNZemllRyUaRAU8OkUaG0AfGRo7DxsBNkNZTnFkAD8lQDEvBQ4OJQ8DOgIzQDw/JDh4UkdPGBA6NRoRAAcaHxoYLic9Th4aNT01MTZTFTUnPS0ZFABADyc6PUQPAy8CHxFiNmlPOzpGMSQBDkUAGDpCXB1GEAYBARpBVUFBIDohFEdAJiZFRx9cRjEZOEA4Tj5NWU1xEkMPASUQFhZCOSQHFA01Qj4vBBhUSzlaFToVLQ0xBxsCIQ9FJ0UOJDUPQgFQaVNkMAA+MzYmNjU=</string>
+
+</resources>
